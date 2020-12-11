@@ -3,7 +3,7 @@ Terraform template to create 2 S3 bucket with access to role and 1 IAM user incl
 
 Pre-Requisites
 
-•	Make sure the EKS role is already created. This template does not create that role
+•	Make sure the role is already created. This template does not create that role
 
 •	Make sure the particular IAM user who want access to 2nd Bucket is already there and have policy attached to access S3 buckets. No any policy will be attached to this user, because this is not requested. Anyway, this user cannot access 1st bucket because of S3 Bucket policy in place
 
@@ -30,5 +30,5 @@ B) Resources Explanation
 3.	Version enabled
 
 •	IAM policy
-1.	An IAM policy will be created and attached to mentioned role allowing access to only 2 of above S3 bucket. Meaning the EKS role cannot access any other S3 buckets
+1.	An IAM policy will be created and attached to mentioned role allowing access to only 2 of above S3 bucket. Meaning the role cannot access any other S3 buckets
 
